@@ -16,7 +16,7 @@ import { getNotificationsCollection } from '../Selectors/NotificationsSelector'
 /* Components */
 import { Row, Column, Button } from 'react-foundation'
 import { Pagination, Portlet, Loading } from 'boosh-react-components'
-import Notification from '../Components/Notification/Notification'
+//import Notification from '../Components/Notification/Notification'
 
 let pageId = 1;
 
@@ -72,7 +72,7 @@ class NotificationsCollection extends React.Component {
         {notifications.items.map((item, id) => {
           return (
             <Column key={id}>
-              <Notification notif={item}/>
+              { /* <Notification notif={item}/> */ }
             </Column>
           )
         })}
